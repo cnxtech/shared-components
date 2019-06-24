@@ -60,8 +60,8 @@ const Unsearchable = forwardRef(
         {...(disabled || loading
           ? {}
           : getToggleButtonProps({
-              ref,
-            }))}
+            ref,
+          }))}
       >
         <Input
           role="select"
@@ -73,6 +73,7 @@ const Unsearchable = forwardRef(
           value={inputValue}
           hideCursor
           {...rest}
+          autoComplete={false}
         />
         <Controls disabled={disabled}>
           {!!inputValue &&
