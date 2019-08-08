@@ -48,7 +48,6 @@ const Searchable = forwardRef(
           value: inputValue,
         })}
         {...rest}
-        autoComplete={false}
         inlineContent={
           <Controls disabled={disabled}>
             {!!inputValue &&
