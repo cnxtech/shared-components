@@ -4,7 +4,7 @@ import * as styles from './styles';
 import { defaultProps } from 'recompose';
 
 const Note = ({ children, Container, Corner, ...rest }) => (
-  <Container {...rest}>
+  <Container  {...rest}>
     {children}
     <Corner />
   </Container>
@@ -28,6 +28,7 @@ Note.propTypes = {
 };
 
 Note.defaultProps = {
+  className: 'scl-note',
   Container: styles.Container,
   Corner: styles.Corner,
 };
